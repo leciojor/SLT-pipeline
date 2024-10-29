@@ -56,5 +56,6 @@ jobs:
             fi            
 
             docker run -d \
+            -p 80:3000 \
             --name react-client-slt-container \
             oracio/react-client-slt:latest
