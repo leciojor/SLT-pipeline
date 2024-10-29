@@ -66,6 +66,7 @@ const Input = () => {
     }
   }
 
+  
   //Send to flask server
   async function sendText(speech_text) {
     console.log("Sending request");
