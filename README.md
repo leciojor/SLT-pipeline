@@ -12,8 +12,11 @@ However, in case you would like to test it manually, do the following:
 
 * add a .env file to the root with the following env variables:
 
-SPEECH_KEY = <your-azure-api-key-for-ASR>
+SPEECH_KEY = <your-azure-api-key-for-ASR> 
+
 SPEECH_REGION = <your-azure-speech-region>
+
+TRANSLATOR_KEY =  <your-azure-translator-api-key>
 
 *Run __main__.py with the following format:
 
