@@ -1,3 +1,4 @@
+# Build stage
 FROM node:18 as build
 
 WORKDIR /frontend
@@ -6,10 +7,12 @@ COPY ./frontend /frontend
 
 RUN npm install
 
-EXPOSE 3000
+RUN npm run build
 
-# ENV REACT_APP_SPEECH_KEY=99lRzmb0VUXtYoLzPDWSq7oHo1txQmYs6TmsqLg04WdWxGFo4Q5ZJQQJ99AJACYeBjFXJ3w3AAAYACOGrWa8
-# ENV REACT_APP_SPEECH_REGION=eastus
-# ENV REACT_APP_TRANSLATOR_KEY=5ZvlD3GwBNHVslT5mGo4vOabALOjvIVVbl2gB2LkfJVUeuKdp1U3JQQJ99AJACYeBjFXJ3w3AAAbACOGvzbg
+FROM nginx:alpine
 
-CMD ["npm", "start"]
+COPY --from=build /frontend/build /usr/share/nginx/html
+
+EXPOSE 80
+
+CMD ["nginx", "-g", "daemon off;"]
