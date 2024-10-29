@@ -22,8 +22,10 @@ const Input = () => {
 
   //input audio logic
   async function getAudio() {
+    console.log("Getting Audio")
     try {
       const subscriptionKey = process.env.REACT_APP_SPEECH_KEY;
+      console.log(subscriptionKey)
       const region = process.env.REACT_APP_SPEECH_REGION;
       const speechConfig = sdk.SpeechConfig.fromSubscription(subscriptionKey, region);
       const audioConfig = sdk.AudioConfig.fromDefaultMicrophoneInput();
