@@ -7,6 +7,9 @@ WORKDIR /backend
 COPY ./backend/requirements.txt .
 
 COPY ./backend /backend
+
+RUN pip install --no-cache-dir -r requirements.txt
+
 # Expose the port the application runs on
 EXPOSE 5000
 
