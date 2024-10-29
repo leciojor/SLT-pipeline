@@ -19,7 +19,7 @@ SPEECH_REGION = <your-azure-speech-region>
 
 TRANSLATOR_KEY =  <your-azure-translator-api-key>
 
-* Run __main__.py with the following format:
+Run __main__.py with the following format:
 
     python __main__.py -i <name-of-input-speech> -o <name-of-output-speech>
 
