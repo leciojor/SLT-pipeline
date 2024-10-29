@@ -5,11 +5,11 @@ THIS PROJECT IS BEING HOSTED AT: ** http://ec2-18-188-234-57.us-east-2.compute.a
 
 However, in case you would like to test it manually, do the following: 
 
-*Clone the repository 
+* Clone the repository 
 
-*Install the dependencies on backend/requirements.txt
+* Install the dependencies on backend/requirements.txt
 
-*Add your input speech file (wav please) to the ROOT folder 
+* Add your input speech file (wav please) to the ROOT folder 
 
 * add a .env file to the root with the following env variables:
 
