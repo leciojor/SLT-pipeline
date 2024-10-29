@@ -6,7 +6,7 @@ WORKDIR /backend
 # Copy only the requirements file first
 COPY ./backend/requirements.txt .
 
-COPY . .
+COPY ./backend /backend
 # Expose the port the application runs on
 EXPOSE 5000
 
