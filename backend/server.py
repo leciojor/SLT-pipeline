@@ -15,7 +15,7 @@ def run_method():
     try:
         print("translating")
         translated_text = mt(src_text)
-        speech_translated = tts(translated_text, "outpu")
+        speech_translated = tts(translated_text, "output")
 
         audio_base64 = base64.b64encode(speech_translated.audio_data).decode('utf-8')
         
@@ -32,4 +32,3 @@ def run_method():
 
 if __name__ == '__main__':
     app.run(port=5000)
-
