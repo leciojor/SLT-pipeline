@@ -1,0 +1,5 @@
+azure-cognitiveservices-speech
+uuid
+Flask-Cors
+Flask
+pybase64
