@@ -42,7 +42,6 @@ jobs:
           description: 'GitHub Action slt'
       
       - name: Deploy React app to EC2
-        if: success()
         uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.AWS_IP }}
