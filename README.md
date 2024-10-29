@@ -1,6 +1,7 @@
 # SLT-pipeline
 
-THIS PROJECT IS BEING HOSTED AT: ** **
+THIS PROJECT IS BEING HOSTED AT: ** http://18.221.42.27 **
+*make sure to use the http protocol because I did not have time to set up the certificates
 
 However, in case you would like to test it manually, do the following: 
 
@@ -24,6 +25,6 @@ TRANSLATOR_KEY =  <your-azure-translator-api-key>
 
 **Make sure to put the right path for the files, otherwise the program will not locate it
 
-**For running the logic manually, please fill both the input and output parameters. If both are not included, the application will raise an error. Also, if the file is invalid, it will also throw an error. If you would like to check the application in a more intuitive way, you can simply check it at the server that it is hosted: ** **
+**For running the logic manually, please fill both the input and output parameters. If both are not included, the application will raise an error. Also, if the file is invalid, it will also throw an error. If you would like to check the application in a more intuitive way, you can simply check it at the server that it is hosted: ** http://18.221.42.27 **
 
 **If the audio file is invalid, it will also throw an error
