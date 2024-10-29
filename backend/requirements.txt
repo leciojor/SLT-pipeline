@@ -4,3 +4,5 @@ Flask-Cors
 Flask
 pybase64
 requests
+python-dotenv
+argparse
