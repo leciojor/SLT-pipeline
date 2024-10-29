@@ -1,7 +1,7 @@
 FROM python:3.11-slim
 
 # Set the working directory
-WORKDIR /backend/src
+WORKDIR /backend
 
 # Copy only the requirements file first
 COPY ./backend/requirements.txt .
